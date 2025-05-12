@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store Closed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #e0f7fa 0%, #fff3e0 100%);
             color: #333;
             display: flex;
             flex-direction: column;
@@ -17,53 +18,71 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            overflow-x: hidden;
         }
         .container {
-            max-width: 600px;
-            padding: 20px;
+            max-width: 700px;
+            padding: 30px;
             margin: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 215, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
         }
         h1 {
-            font-size: 2.5em;
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
             margin-bottom: 0.5em;
-            color: #444;
+            color: #1a3c5e;
+            letter-spacing: 1px;
         }
         p {
             font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 1em;
+            line-height: 1.8;
+            margin-bottom: 1.2em;
+            color: #4a4a4a;
+        }
+        a {
+            color: #d4a017;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #b8860b;
         }
         .footer {
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 0.9em;
-            color: #777;
+            color: #666;
+            font-style: italic;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
         @media (max-width: 600px) {
             h1 {
-                font-size: 2em;
+                font-size: 2.2em;
             }
             p {
                 font-size: 1em;
             }
             .container {
-                margin: 10px;
-                padding: 15px;
+                margin: 15px;
+                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Thank You for Visiting</h1>
-        <p>We’re sorry, but our store is no longer operational. We deeply appreciate your support and the time you spent with us.</p>
-        <p>If you have any questions or need further assistance, please feel free to reach out to us at <a href="mailto:support@yourdomain.com">support@yourdomain.com</a>.</p>
-        <p>We hope to reconnect with you in the future!</p>
+        <h1>A Fond Farewell</h1>
+        <p>Our store has closed its doors, but this is not the end of our journey. We are immensely grateful for your support and the memories we’ve shared.</p>
+        <p>While we explore new horizons, we’d love to stay in touch. For any questions or future updates, please reach out to us at <a href="mailto:hello@aquilaebrand.com">hello@aquilaebrand.com</a>.</p>
+        <p>Here’s to new beginnings and brighter tomorrows!</p>
     </div>
     <div class="footer">
-        &copy; 2025 Your Store Name. All rights reserved.
+        © 2025 Aquilae Brand. All rights reserved.
     </div>
 </body>
 </html>
