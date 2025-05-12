@@ -10,7 +10,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Open Sans', sans-serif;
-            background: linear-gradient(135deg, #e0f7fa 0%, #fff3e0 100%);
+            background: #fff;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -24,31 +24,30 @@
             max-width: 700px;
             padding: 30px;
             margin: 20px;
-            background-color: rgba(255, 255, 255, 0.95);
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 215, 0, 0.2);
-            animation: fadeIn 1.5s ease-in-out;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3em;
+            font-size: 2.8em;
             margin-bottom: 0.5em;
-            color: #1a3c5e;
-            letter-spacing: 1px;
+            color: #222;
+            letter-spacing: 0.5px;
         }
         p {
             font-size: 1.2em;
             line-height: 1.8;
             margin-bottom: 1.2em;
-            color: #4a4a4a;
+            color: #444;
         }
         a {
-            color: #d4a017;
+            color: #0066cc;
             text-decoration: none;
             transition: color 0.3s ease;
         }
         a:hover {
-            color: #b8860b;
+            color: #003366;
         }
         .footer {
             margin-top: 30px;
@@ -56,13 +55,9 @@
             color: #666;
             font-style: italic;
         }
-        @keyframes fadeIn {
-            0% { opacity: 0; transform: translateY(20px); }
-            100% { opacity: 1; transform: translateY(0); }
-        }
         @media (max-width: 600px) {
             h1 {
-                font-size: 2.2em;
+                font-size: 2em;
             }
             p {
                 font-size: 1em;
